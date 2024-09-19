@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css형식1.css</title>
+    <!-- html 코멘트 -->
+  <style>
+   /* css코멘트 */
+   /* 선택자{속성:값1 값2 값3; 속성:값; 속성:값;}  */
+   body{background-color: #864; color:yellow; margin:0;}
+   /* 클래스2선택자 */
+   .section2{
+    background-color: #ccc; }
+      /* 아이디선택자 #wrap */
+   #wrap{color: #000;}
+   /* 
+   .main 클래스 main 공백이옴 후손
+   .section 클래스 section> 직계자식 div */
+   .main .section > div{
+    background-color: #f00;
+   }
+   /* 클래스main 중 직계 자식 div */
+   .main > div{
+    background-color: #0f0;
+   }
+   /* 클래스main 후손 중 div 선택자 */
+   .main div{
+    background-color: #00f;
+   }
+  </style>
+  </head>
+  <body>
+    <!-- #wrap -->
+    <div id="wrap">
+      <!-- crtl+enter 커서만이동하는 줄바꿈 -->
+      <div class="header"></div>
+      <div class="main">
+        <!-- section.section.section$*3 -->
+        <!-- section.section.section$*3>div.inner>p*3>{아이템$} -->
+        <!-- emmet표기법 {텍스트} -->
+        <section class="section section1">
+          <div class="inner">
+            <p>아이템1</p>
+            <p>아이템2</p>
+            <p>아이템3</p>
+          </div>
+        </section>
+        <section class="section section2">
+          <div class="inner">
+            <p>아이템1</p>
+            <p>아이템2</p>
+            <p>아이템3</p>
+          </div>
+        </section>
+        <section class="section section3">
+          <div class="inner">
+            <p>아이템1</p>
+            <p>아이템2</p>
+            <p>아이템3</p>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
