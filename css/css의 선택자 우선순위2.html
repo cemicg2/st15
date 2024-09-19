@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>css선택자 우선순위</title>
+</head>
+<style>
+  /* p는 모든선택자 */
+p{
+ background-color:#ccc !important ;
+ border: 1px solid #000;
+
+}
+/* color 조상한테 값 지정 후손 상속 */
+.section{
+  color:blue;
+  background-color: antiquewhite;
+  padding: 20px;
+}
+/* 소스 기입 순서보다 우선하는 우선순위값 */
+#section1 p{background-color: #486;}
+.section p{background-color:#0f0 ;}
+</style>
+
+<body>
+ 
+
+  <div class="wrap">
+    <div class="section" id="section1">
+      <div class="inner">
+
+        <p style="background-color: #ff0;">section1-item</p>
+      </div>
+    </div>
+    <div class="section" id="section2">
+      <div class="inner">
+        <p>section2-item</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
