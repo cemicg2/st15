@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>margin2 블록레벨 수평정렬</title>
+
+<style>
+  /* reset */
+  *{margin: 0; padding: 0;}
+  .wrap{
+ 
+    background-color: azure;
+  }
+  header{
+    background-color: #fff;
+    border: 1px solid #000;
+  }
+  main{
+    background-color: #3ff;
+    border: 1px solid #962e2e;
+  }
+  main .cotaniner{
+    width: 80%;
+    min-width: 980px;
+    max-width: 1400px;
+    margin: 5px auto;
+    border: 1px solid cornflowerblue;
+  }
+  footer{
+    background-color: #962e2e;
+    border: 1px solid #0f0;
+  }
+  footer .footer-inner{
+    width: 80%;
+    min-width: 150px;
+    margin: 1px auto;
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <!-- header+main+footer -->
+    <header>
+      <!-- h1.logo+nav>{헤더네비} -->
+      <h1 class="logo">로고</h1>
+      <nav>헤더네비</nav>
+    </header>
+    <main>
+      <!-- div.container>section*3>{section} -->
+      <div class="container">
+        <section>section</section>
+        <section>section</section>
+        <section>section</section>
+      </div>
+    </main>
+    <footer>
+      <!-- div.fooer-inner -->
+      <div class="footer-inner">풋터내용</div>
+    </footer>
+  </div>
+</body>
+</html>

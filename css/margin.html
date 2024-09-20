@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>margin</title>
+</head>
+<style>
+  /* reset */
+  *{margin: 0; padding: 0;}
+  .wrap{
+    width: 90%;
+    /* 블롤레벨 수평 정렬 margin: 값 auto */
+    margin: 0 auto;
+    background-color: azure;
+  }
+</style>
+<body>
+  <div class="wrap">
+    <!-- header+main+footer -->
+    <header>
+      <!-- h1.logo+nav>{헤더네비} -->
+      <h1 class="logo">로고</h1>
+      <nav>헤더네비</nav>
+    </header>
+    <main>
+      <!-- div.container>section*3>{section} -->
+      <div class="container">
+        <section>section</section>
+        <section>section</section>
+        <section>section</section>
+      </div>
+    </main>
+    <footer>
+      <!-- div.fooer-inner -->
+      <div class="footer-inner">풋터내용</div>
+    </footer>
+  </div>
+</body>
+</html>
