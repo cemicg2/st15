@@ -3,46 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>css선택자 우선순위</title>
-</head>
+  <title>css의 선택자 우선순위</title>
 <style>
-  /* 문서내 모든.section */
+  /* 문서내 모든 .section */
   .section{
-    border: 1px solid #864;
+    border:1px solid #864;
     background-color: #eccfb1;
-    padding: 20px 20px;
+    padding:20px 20px;
   }
-/* 
-문서 내 모드 .wrap의 직계자식 .inner
-.wrap > .inner
-문서 내 모드 .wrap의 후손 중 .inner
-.wrap .inner
- */
-.wrap > .inner{background-color: aliceblue;}
-.wrap .inner{background-color: #660;}
 
-/* 문서내 모든 .section찾아서 그중 후손 중 모든 p선택 */
-.section p{
-  background-color: aqua;
-}
-/* 문서내 모든 #section1을 찾아서 그중 후놋 뭊 모든p선택 */
-#section1 p{
-background-color: beige;
-}
+  /* 
+   문서 내 모드 .wrap 의 직계자식  .inner
+  .wrap > .inner  
+
+   문서내 모든 .wrap 의 후손 중 .inner
+  .wrap .inner
+  */
+  /*문서 내 모드 .wrap 의 직계자식  .inner x*/
+  .wrap > .inner{
+    background-color: #ccc;
+  }
+  /*문서 내 모드 .wrap 의 후손 .inner 0*/
+  .wrap .inner{
+    background-color: #660;
+  }
+
+/* 문서내 모든 .section 찾아서 그중 후손 중 모든 p 선택 */
+  .section p{    background-color: #ccc;  }
+
+/* 문서내 모든 #section1 찾아서 그중 후손 중 모든 p 선택 */
+  #section1 p{    background-color: #f00;  }
 
 </style>
-
+</head>
 <body>
   <!-- .wrap>div.section#section$*2>div.inner>p>{section$-item} -->
-<!-- 
-  클래스 이름 여러개 가능
-  아이디 이름 여러개 가능하지 않음
-태그 class=" 이름 이름 이름" 
-클래스 
--->
-
-
-
+   <!-- 
+    클래스 이름 여러개 가능
+    아이디 이름 여러개 가능x
+    <태그 class="이름 이름 이름 "> 내용 </태그>
+    <태그 id="이름"> 내용 </태그>
+   -->
   <div class="wrap">
     <div class="section" id="section1">
       <div class="inner">

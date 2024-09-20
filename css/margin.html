@@ -1,20 +1,21 @@
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>margin</title>
+  <style>
+    /* reset */
+    *{margin:0;padding:0;}
+    .wrap{
+      width:90%;
+      /* 블록레벨 수평 정렬 margin: 값 auto; */
+      margin:0 auto;
+      background-color: #ccc;
+    }
+  </style>
 </head>
-<style>
-  /* reset */
-  *{margin: 0; padding: 0;}
-  .wrap{
-    width: 90%;
-    /* 블롤레벨 수평 정렬 margin: 값 auto */
-    margin: 0 auto;
-    background-color: azure;
-  }
-</style>
 <body>
   <div class="wrap">
     <!-- header+main+footer -->
@@ -24,16 +25,16 @@
       <nav>헤더네비</nav>
     </header>
     <main>
-      <!-- div.container>section*3>{section} -->
+      <!-- div.container>section*3>{section내용} -->
       <div class="container">
-        <section>section</section>
-        <section>section</section>
-        <section>section</section>
+        <section>section내용</section>
+        <section>section내용</section>
+        <section>section내용</section>
       </div>
-    </main>
+     </main>
     <footer>
-      <!-- div.fooer-inner -->
-      <div class="footer-inner">풋터내용</div>
+      <!-- div.footer-inner -->
+      <div class="footer-inner">푸터내용</div>
     </footer>
   </div>
 </body>
