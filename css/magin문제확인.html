@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>margin문제확인</title>
+  <style>
+
+    *{margin:0; padding: 0;}
+    .wrap{
+      margin: 0 50px;
+      background-color: aliceblue;
+      padding-top: 50px;
+      padding-bottom: ;
+    }
+    .box{
+      width: 200px;
+      height: 100px;
+      border: 1px solid #000;
+      background-color: aquamarine;
+    }
+    .box1{
+      /* margin-top: 50px; */
+      margin-bottom: 80px;
+    }
+    .box2{
+      margin-top: 50px;
+      margin-bottom: 30px;
+    }
+    .box3{
+      margin: 0 0 30px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <!-- .box.box$*3>{내용 box$} -->
+    <div class="box box1">내용 box1</div>
+    <div class="box box2">내용 box2</div>
+    <div class="box box3">내용 box3</div>
+  </div>
+</body>
+</html>
