@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>overflow</title>
+  <style>
+    *{margin: 0; padding: 0;}
+    .wrap{margin: 20px auto; width: 80%;}
+    .box{
+      width: 200px;
+      height: 100px;
+      margin-bottom: 50px;
+      background: #6f6;
+    }
+    /* visible초기값 */
+    .box1{overflow: visible;}
+    .box2{overflow: hidden;}
+    .box3{overflow: scroll;}
+    .box4{overflow: auto;}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <!-- .box.box$*4>{box$}+lorem20 -->
+    <div class="box box1">
+      box1
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta necessitatibus expedita ea facilis fugit nostrum totam sapiente ex iusto temporibus.
+    </div>
+    <div class="box box2">
+      box2
+      Repellat officia alias quibusdam provident distinctio magni eius eos hic minus quo dolore quas, sunt dolorem quaerat veritatis temporibus quos.
+    </div>
+    <div class="box box3">
+      box3
+      Voluptates, aliquid recusandae sequi excepturi blanditiis cum sit temporibus voluptas molestiae accusantium molestias architecto aspernatur adipisci maiores rerum eveniet incidunt.
+    </div>
+    <div class="box box4">
+      box4
+      Ab id dolorum in architecto animi, praesentium maiores molestiae saepe optio ipsum assumenda aut illum laudantium doloremque quam repudiandae unde.
+    </div>s
+  </div>
+</body>
+</html>
