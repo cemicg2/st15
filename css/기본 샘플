@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{margin: 0; padding: 0;}
+    .wrap{}
+    header{}
+    .main{}
+    .man .left-lnb{}
+    .main .content{}
+    .main .banner{{}}
+    .footer{}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>header</header>
+    <main class="main">
+      <!-- .left-lnb>{왼쪽 메뉴} -->
+      <div class="left-lnb">왼쪽 메뉴</div>
+      <!-- .content>{본문내용} -->
+      <div class="content">본문내용</div>
+      <!-- .banner>{배너} -->
+      <div class="banner">배너</div>
+    </main>
+    <footer>풋터</footer>
+  </div>
+</body>
+</html>
