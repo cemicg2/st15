@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    ul,ol{
+      border: 1px solid #000;
+    }
+    li{
+      border: 1px solid chocolate;
+      margin-bottom: 10px;
+    }
+    ul{
+      list-style: upper-alpha;
+    }
+    ol{
+      list-style: circle;
+    }
+    /* 백그라운드 이미지로 리스트 스타일 타입 대신 */
+    ul.list-style-sample{
+      list-style: none;
+      padding: 0;
+      border: 0;
+    }
+    ul.list-style-sample li{
+      /*  */
+      list-style: 2.5rem;
+      background-image: url(background/images/img1.png);
+      background-size: auto 30px;
+      background-repeat: no-repeat;
+      background-position: 10px center;
+      padding-left: 3em;
+      border: 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- ul>li*3>{item$} -->
+  <ul>
+    <li>item1</li>
+    <li>item2</li>
+    <li>item3</li>
+  </ul>
+  <!-- ol>li*3{item$} -->
+  <ol>
+    <li>item1</li>
+    <li>item2</li>
+    <li>item3</li>
+  </ol>
+  <!-- 백그라운드 이미지를 블릿 넣기 -->
+   <!-- ul>li*3{item$} -->
+   <ul class="list-style-sample">
+    <li>item1</li>
+    <li>item2</li>
+    <li>item3</li>
+   </ul>
+</body>
+</html>

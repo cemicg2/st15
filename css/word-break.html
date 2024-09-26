@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>word break</title>
+  <style>
+    *{margin: 0;padding: 0;}
+    .box{margin: 20px auto; width: 400px; border: 1px solid#000;}
+    .box1{
+      word-break: keep-all;
+      text-align: center;
+    }
+    .box2{
+      word-break: normal;
+      text-align: center;
+    }
+    .box3{
+      word-break: keep-all;
+     /* 영어도 단어단위 word wrap 아니라 문자 단위로 wrap */
+    }
+  </style>
+</head>
+<body>
+  <div class="box box1">
+    베블얼치잌륜정어 갠리으형마궁이어 하사므왕으나이다 닝훙도 안나적숴 나셔님지제크라의, 꺌길렐 자먄헤이신싀는 거앵 온시는 인깅어 잔긱에 해삼갓눠긔애에서 믜다야에 포허펀엄은 얼과갈게 흔다디헌이죠 곱칠을 이비, 얼멩애나오에게</div>
+  <div class="box box2">베블얼치잌륜정어 갠리으형마궁이어 하사므왕으나이다 닝훙도 안나적숴 나셔님지제크라의, 꺌길렐 자먄헤이신싀는 거앵 온시는 인깅어 잔긱에 해삼갓눠긔애에서 믜다야에 포허펀엄은 얼과갈게 흔다디헌이죠 곱칠을 이비, 얼멩애나오에게</div>
+  <div class="box box3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias quidem sint repudiandae a autem odit veritatis? Odio vero magni ipsam.</div>
+  <div class="box box4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias quidem sint repudiandae a autem odit veritatis? Odio vero magni ipsam.</div>
+</body>
+</html>
