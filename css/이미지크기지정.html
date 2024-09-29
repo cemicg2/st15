@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{margin: 0; padding: 0;}
+    .wrap{
+      margin: 20px;
+      background-color: #c3da89;
+      border: 1px solid crimson;
+    }
+    /* 이미지는 별도의 지정이 없으면 본인의 원래 크기로 표시 */
+    .media-wrap{
+      background-color: #fff;
+      border: 1px solid #000;
+
+    }
+    .media-wrap .img{
+      /* width: 400px; */
+      /* height:  auto;  */
+      /* 이미지 가로세율 비율 유지해달란 뜻 */
+      height: 400px;
+      /* width auto 원이미지 종횡비 유지한채 조절 */
+    }
+
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="media-wrap">
+      <img class="img" src="./background/images/bg.jpg" alt="">
+    </div>
+  </div>
+</body>
+</html>
