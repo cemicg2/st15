@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+/* reset */
+*{margin: 0; padding: 0; 
+  box-sizing: border-box;}
+
+ul,ol,li{list-style: none;}
+
+/* 테스트화면용 */
+/* body{background-color: #ff9;} */
+.wrap{
+  margin: 50px;
+}
+
+/* float 문제를 해결위헤 부모요소에 추가 */
+.clearfix{overflow: hidden;}
+.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* 갤러리 레이아웃float */
+.card__list{}
+.card__list ul.card__wrap{
+   background-color: #b9b6b6;
+}
+.card__list li.card__item{
+  float: left;
+  width: calc(25% - (10px + 10px));
+  margin: 10px 10px;  /* 좌우 밖에 여백 10+10 */
+  /* 1col당 너비 25%+20px *4 100%+80px 늘어난 셈 */
+}
+.card__list div.card{}
+
+
+/* 카드디자인 */
+.card{
+ /* width: 300px; */
+ width: auto;
+ border: 1px solid #efefef;
+
+}
+.card .card__thumbnail{
+
+  /* background: #ff6; */
+}
+.card .card__thumbnail a{
+   display: block; 
+  
+}
+.card .card__thumbnail img{
+    display: block; 
+    width: 100%;
+}
+
+.card .card__description{
+  padding: 1rem 0.8rem;
+  background-color: #fff;
+  font-family: "Noto Sans KR", system-ui;
+  border-top: 1px solid #efefef;
+}
+.card .card__description .card__title{
+  margin-bottom: 0.8rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+
+}
+.card .card__description .card__spec{}

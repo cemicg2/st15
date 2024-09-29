@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{margin: 0; padding: 0;}
+    .wrap{
+      margin: 20px;
+      background-color: #c3da89;
+      border: 1px solid crimson;
+    }
+    /* 이미지는 별도의 지정이 없으면 본인의 원래 크기로 표시 */
+    .media-wrap{
+      width: 300px;
+      background-color: #fff;
+      border: 1px solid #000;
+
+    }
+    .media-wrap .img{
+      display: block;
+      width: 100%;
+    }
+  .box{
+    margin-left: 50px;
+    /* border: 1px solid #000; */
+    background-color: #f6f;
+    width: 400px;
+    box-sizing: border-box;
+    height: 400px;
+    padding-top: 400px;
+  }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="media-wrap">
+      <!-- 종횡비를 유지하게 위해 img 부모요소 추가 -->
+      <div class="img-wrap">
+        <img class="img" src="./background/images/bg.jpg" alt="">
+      </div><!-- </div>  -->   
+  </div>
+  </div>
+  <div class="box">box</div>
+</body>
+</html>
