@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>레이아웃만들기</title>
+  <style>
+    *{margin: 0; padding: 0; block-size: border-box;}
+   .inner{ width: 1160px; margin: auto; height: 1080px;  padding: 0 20px;}
+   header{height: 200px; background: #47b749;}
+   .slide{height: 340px; background: #fe3}
+   .contents{height: 340px; background: #fcc; display: flex;}
+   .contents article{background: #386; flex-basis: 33.333%;}
+   .contents article:nth-child(2){background: #fff;}
+   footer{height: 200px; background: #333;}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="inner">
+      <header>header</header>
+      <div>
+        <div class="slide"></div>
+        <div class="contents">
+          <article>con1</article>
+          <article>con2</article>
+          <article>con3</article>
+        </div>
+      </div>
+      <footer>footer</footer>
+    </div>
+  </div>
+</body>
+</html>

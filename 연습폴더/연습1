@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>레이아웃만들기</title>
+  <style>
+    *{margin: 0; padding: 0; block-size: border-box;}
+    .inner{width: 0; height: ; margin: auto; padding: 0.20;}
+    header{ height: 200px; background: #000;}
+    .slide{height: 300px; background: #000;}
+    .contents{height: 340px; background:  ; display: flex;}
+    .contents article{background:  ; flex-basis: 33.333%;}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="inner">
+      <header></header>
+      <div>
+        <div class="side"></div>
+        <div class="contens"></div>
+         <article>con1</article>
+         <article>con2</article>
+         <article>con3</article>
+      </div>
+      <footer>footer</footer>
+    </div>
+  </div>
+</body>
+</html>
